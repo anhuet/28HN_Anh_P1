@@ -351,6 +351,64 @@ i:hover {
   padding-left: 15px;
 }
 
+.productlist {
+  padding: 0 15px;
+}
+
+.productlist .productlist__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: solid 1px #e6e6e6;
+}
+
+.productlist .productlist__item .productlist__img {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.productlist .productlist__item .productlist__img img {
+  width: 100%;
+}
+
+.productlist .productlist__item .productlist__desc {
+  -webkit-box-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  height: 100%;
+}
+
+.productlist .productlist__item .productlist__desc .productlist__desc-wrap {
+  padding: 0 15px;
+}
+
+.productlist .productlist__item .productlist__desc .productlist__desc-wrap p {
+  color: #818181;
+  font-size: 13px;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.productlist .productlist__item .productlist__desc .productlist__desc-wrap button {
+  text-transform: uppercase;
+}
+
+.productlist .productlist__item .productlist__desc .productlist__desc-wrap a {
+  color: #818181;
+  margin: 0 20px;
+}
+
+.productlist .productlist__item .productlist__desc .productlist__desc-wrap a i {
+  margin: 0 5px;
+}
+
 .slide {
   padding: 0 15px;
   margin-bottom: 100px;

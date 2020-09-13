@@ -56,10 +56,11 @@ block layout
             .productdetail__sidebar
                 .productdetail__sidebar-wrapper
                     .productdetail__sidebar--left
-                        a.productdetail__sidebar--active(href="productlitst.html")
-                            i.fas.fa-th
-                        a(href="#")
-                            i.fas.fa-th-list
+                        block listView
+                            a.productdetail__sidebar--active(href="productlitst.html")
+                                i.fas.fa-th
+                            a(href="productlist2.html")
+                                i.fas.fa-th-list
                     .productdetail__sidebar--right
                         a(href="#"): i.fas.fa-caret-left
                         - for (var i = 1; i < 6; i++)
@@ -69,19 +70,19 @@ block layout
                                 a(href="#")=i
                         a(href="#"): i.fas.fa-caret-right
 
-
-            .productdetail__row
-                +productListItem("../assets/images/1.jpg")
-                +productListItem("../assets/images/2.jpg")
-                +productListItem("../assets/images/3.jpg")
-            .productdetail__row
-                +productListItem("../assets/images/4.jpg")
-                +productListItem("../assets/images/5.jpg")
-                +productListItem("../assets/images/6.jpg")
-            .productdetail__row
-                +productListItem("../assets/images/7.jpg")
-                +productListItem("../assets/images/8.jpg")
-                +productListItem("../assets/images/9.jpg")
+            block list
+                .productdetail__row
+                    +productListItem("../assets/images/1.jpg")
+                    +productListItem("../assets/images/2.jpg")
+                    +productListItem("../assets/images/3.jpg")
+                .productdetail__row
+                    +productListItem("../assets/images/4.jpg")
+                    +productListItem("../assets/images/5.jpg")
+                    +productListItem("../assets/images/6.jpg")
+                .productdetail__row
+                    +productListItem("../assets/images/7.jpg")
+                    +productListItem("../assets/images/8.jpg")
+                    +productListItem("../assets/images/9.jpg")
 
             
             

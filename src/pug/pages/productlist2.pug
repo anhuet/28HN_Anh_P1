@@ -1,0 +1,13 @@
+extends productlitst.pug
+block listView 
+    a(href="productlitst.html")
+        i.fas.fa-th
+    a.productdetail__sidebar--active(href="productlist2.html")
+        i.fas.fa-th-list
+block list
+    .productlist.container
+        +productlistitem("../assets/images/1.jpg")
+        +productlistitem("../assets/images/2.jpg")
+        +productlistitem("../assets/images/3.jpg")
+        +productlistitem("../assets/images/4.jpg")
+

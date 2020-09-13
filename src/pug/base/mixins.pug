@@ -55,3 +55,19 @@ mixin productList(list)
 mixin productTag (list)
     - for (var i = 0; i < list.length; i++)
         a(href="#")=list[i]
+mixin productlistitem(img)
+  .productlist__item
+    .productlist__img
+        .productlist__img-wrap
+            img(src=img, alt="")
+    .productlist__desc
+        .productlist__desc-wrap
+            +titleItem
+            p Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.
+            button Add to cart
+            a(href="#")
+                i.fas.fa-heart
+                | Yêu thích
+            a(href="#")
+                i.fas.fa-signal
+                | So sánh 
