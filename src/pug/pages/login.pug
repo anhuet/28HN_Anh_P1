@@ -1,0 +1,31 @@
+extends ../base/base.pug
+include ../base/mixins.pug
+block layout
+    header
+        .header-white
+            include ../partials/header.pug
+    include menu-mega.pug
+    section#login
+        .login.container
+            .login-header
+                +pagetag(["Trang chủ","Blog"])
+                .login-header__menu
+                    .login-header__head
+                        +headding("Đăng nhập")
+                    button.login-header__res Đăng ký
+            form.login-form 
+                .login-form-wrapper
+                    .login-form__head
+                        h2 khách hàng đăng nhập 
+                        p Nếu bạn có một tài khoản, xin vui lòng đăng nhập 
+                    .login-form__input
+                        +Input("Email", "email", 1, "email")
+                        +Input("Password", "password", 1, "password")
+                    .login-form__submit
+                        .login-form__check
+                            input.customCheckbox(type="checkbox" name="forgetPW" value="true")
+                            label(for="forgetPW") Quên mật khẩu
+                        button.btn ĐĂNG NHẬP
+            
+            
+    include ../partials/footer.pug

@@ -1,0 +1,15 @@
+extends ../base/base.pug
+include ../base/mixins.pug
+block layout
+    header
+        .header-white
+            include ../partials/header.pug
+    include menu-mega.pug
+    section#blogdetail
+        .blogdetail.container
+            .blogdetail-header
+                +pagetag(["Trang chủ","Blog"])
+                +headding("Giỏ hàng")
+            
+            
+    include ../partials/footer.pug
