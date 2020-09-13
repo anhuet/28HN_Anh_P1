@@ -1,0 +1,23 @@
+extends ../base/base.pug
+include ../base/mixins.pug
+block layout
+
+    header
+        .header-white
+            include ../partials/header.pug
+    include menu-mega.pug
+    section#describe
+        .describe.container
+            +pagetag(["Trang chủ","Giới thiệu"])
+            +headding("Giới thiệu")
+            .describe__content
+                .describe__content--img
+                    img(src="../assets/images/hotdeal.jpg", alt="")
+                .describe__contnet--text
+                    h1 chào mừng đến với wine hourse 
+                    p Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml.Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml.Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml...
+
+    
+   
+    
+    include ../partials/footer.pug

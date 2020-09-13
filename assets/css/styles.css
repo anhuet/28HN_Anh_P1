@@ -365,6 +365,53 @@ i:hover {
   padding-left: 15px;
 }
 
+.describe {
+  margin-bottom: 100px;
+}
+
+.describe .tag, .describe .product-item__info--heading, .describe .product-item__info--arrow {
+  padding-left: 15px;
+}
+
+.describe .describe__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.describe .describe__content .describe__content--img {
+  width: 41.6666667%;
+  padding: 0 15px;
+}
+
+.describe .describe__content .describe__content--img img {
+  width: 100%;
+}
+
+.describe .describe__content .describe__contnet--text {
+  padding: 0 15px;
+  width: 58.333333333%;
+}
+
+.describe .describe__content .describe__contnet--text h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.describe .describe__content .describe__contnet--text p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #818181;
+  width: 80%;
+}
+
 .cart {
   padding: 0 15px;
   margin-bottom: 100px;
