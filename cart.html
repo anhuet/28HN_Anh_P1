@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Pug-Sass Starter</title>
+    <!-- Styles-->
+    <link href="./assets/css/styles.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <div class="header-white">
+        <div class="container header-nav">
+          <div class="header-nav__menu">
+            <ul class="header-nav__menu-list">
+              <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#">Tài khoản của tôi  </a></li>
+              <li class="header-nav__menu-item"> <a class="header-nav__menu-link" href="#">Trạng thái đơn hàng  </a></li>
+              <li class="header-nav__menu-item"> <a class="header-nav__menu-link" href="#">Danh sách ưa thích  </a></li>
+              <li class="header-nav__menu-item"> <a class="header-nav__menu-link" href="cart.html">Giỏ hàng  </a></li>
+              <li class="header-nav__menu-item"> <a class="header-nav__menu-link" href="#">Đăng nhập  </a></li>
+              <li class="header-nav__menu-item"> <a class="header-nav__menu-link" href="#">Đăng ký </a></li>
+            </ul>
+          </div>
+          <div class="header-nav__search">
+            <input class="header-nav__search-input" type="text" placeholder="Tìm kiếm gì ở đây ..."><i class="fas fa-search"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="menu">
+      <div class="menu-list container">
+        <div class="menu-list__logo">
+          <div class="menu-list__logo--text">
+            <h2>Wine hourse</h2>
+            <h4>Since 1980</h4><img src="../assets/images/logo.png" alt="">
+          </div>
+          <div class="menu-list__logo--bg"><img src="../assets/images/Vector Smart Object.png" alt=""></div>
+        </div>
+        <div class="menu__list"><a class="menu__list-item" href="index.html">Trang chủ</a>
+          <div class="menu__mega"><a class="menu__list-item" href="productlitst.html">Rượu vang đỏ</a>
+            <div class="menu__submenu">
+              <div class="menu__submenu-list"><a class="menu__submenu-list-title">
+                  <h3>Rượu ngoại <a>Rượu Chivas</a><a>Hàng độc - Rượu độc đáo</a><a>Johnnie Walker</a><a>Rượu Whisky</a><a>Rượu Remy Martin</a><a>Rượu Glenmorangie</a>
+                  </h3></a></div>
+              <div class="menu__submenu-list"><a class="menu__submenu-list-title">
+                  <h3>Rượu ngoại <a>Rượu Chivas</a><a>Hàng độc - Rượu độc đáo</a><a>Johnnie Walker</a><a>Rượu Whisky</a><a>Rượu Remy Martin</a><a>Rượu Glenmorangie</a>
+                  </h3></a></div>
+              <div class="menu__submenu-list"><a class="menu__submenu-list-title">
+                  <h3>Rượu ngoại <a>Rượu Chivas</a><a>Hàng độc - Rượu độc đáo</a><a>Johnnie Walker</a><a>Rượu Whisky</a><a>Rượu Remy Martin</a><a>Rượu Glenmorangie</a>
+                  </h3></a></div>
+              <div class="menu__submenu-image"><img src="../assets/images/mega.png" alt=""></div>
+            </div>
+          </div><a class="menu__list-item" href="#">Rượu vang trắng</a><a class="menu__list-item" href="#">Chanpagne</a><a class="menu__list-item" href="#">Thông tin </a><a class="menu__list-item" href="#">Blog</a><a class="menu__list-item" href="#">Liên hệ</a>
+        </div>
+      </div>
+    </section>
+    <section id="cart">
+      <div class="cart container">
+        <div class="tag"><a class="tag__item" href="#">Trang chủ</a><span>/</span><a class="tag__item" href="#">Sản phẩm</a><span>/</span><a class="tag__item" href="#">Rượu vang đỏ</a><span>/</span>
+        </div>
+        <h1 class="product-item__info--heading">Giỏ hàng</h1><img class="product-item__info--arrow" src="../assets/images/titleleft-dark.png" alt=""/>
+        <table class="cart__table">
+          <tr> 
+            <th>ảnh</th>
+            <th>tên sản phẩm</th>
+            <th>giá</th>
+            <th>số lượng</th>
+            <th>tổng số</th>
+            <th>xóa</th>
+          </tr>
+          <tr> 
+            <td class="cart__table--img"><img src="../assets/images/1.jpg"/></td>
+            <td class="cart__table--name titlename">Rượu vang đỏ</td>
+            <td class="cart__table--price price">345,000<span>đ </span></td>
+            <td class="cart__table-quantity">1</td>
+            <td class="cart__table--sum price">345,000<span>đ</span></td>
+            <td class="cart__table-delete"><a><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+          <tr> 
+            <td class="cart__table--img"><img src="../assets/images/2.jpg"/></td>
+            <td class="cart__table--name titlename">Rượu vang đỏ</td>
+            <td class="cart__table--price price">345,000<span>đ </span></td>
+            <td class="cart__table-quantity">1</td>
+            <td class="cart__table--sum price">345,000<span>đ</span></td>
+            <td class="cart__table-delete"><a><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+          <tr> 
+            <td class="cart__table--img"><img src="../assets/images/3.jpg"/></td>
+            <td class="cart__table--name titlename">Rượu vang đỏ</td>
+            <td class="cart__table--price price">345,000<span>đ </span></td>
+            <td class="cart__table-quantity">1</td>
+            <td class="cart__table--sum price">345,000<span>đ</span></td>
+            <td class="cart__table-delete"><a><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+          <tr> 
+            <td class="cart__table--img"><img src="../assets/images/4.jpg"/></td>
+            <td class="cart__table--name titlename">Rượu vang đỏ</td>
+            <td class="cart__table--price price">345,000<span>đ </span></td>
+            <td class="cart__table-quantity">1</td>
+            <td class="cart__table--sum price">345,000<span>đ</span></td>
+            <td class="cart__table-delete"><a><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+        </table>
+        <div class="cart__button">
+          <button> TIẾP MUA HÀNG</button>
+          <button> XÓA</button>
+          <button>CẬP NHẬT</button>
+        </div>
+      </div>
+    </section>
+    <section class="brand"></section>
+    <div class="brand-logo container"><img src="../assets/images/brand_logo.png" alt=""></div>
+    <section id="footer">
+      <div class="footer-wrapper container">
+        <div class="footer__item">
+          <h1>THÔNG TIN</h1>
+          <div class="footer__item-info">
+            <h2>Về chúng tôi</h2>
+            <h2>Giao hàng</h2>
+            <h2>Cảm nghĩ</h2>
+            <h2>Lưu trữ</h2>
+            <h2>Danh sách </h2>
+          </div>
+        </div>
+        <div class="footer__item">
+          <h1>Mua hang</h1>
+          <div class="footer__item-info">
+            <h2>VẬN chuyển trả hàng</h2>
+            <h2>Mua hàng an toàn</h2>
+            <h2>vận chuyển quốc tế</h2>
+            <h2>Liến kết</h2>
+            <h2>Dịch vụ giảm giá</h2>
+          </div>
+        </div>
+        <div class="footer__email">
+          <h1>Gửi email</h1>
+          <div class="footer__email-input">
+            <p>Gửi email cho chúng tôi để đượng hỗ trợ</p>
+            <div class="footer__item-input__form">
+              <input type="text" name="sendmail" placeholder="Enter your email"><img src="../assets/images/footer_send.png" alt=""><span>Gửi</span>
+            </div>
+            <ul>
+              <li><a href=""><i class="fa fa-dove"></i></a></li>
+              <li><a href=""><i class="fa fa-dove">               </i></a></li>
+              <li><a href=""><i class="fa fa-volleyball-ball">             </i></a></li>
+              <li><a href=""><i class="fa fa-wifi">           </i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__local">
+          <h1>Liên hệ</h1>
+          <div class="footer__item-local">
+            <p><i class="fas fa-map-marker-alt">  Tầng 4,Tòa nhà HaNoi Group Số 442 Đội Cần, P.Cộng Vị, Quận Ba ĐÌnh, Hà Nội.</i><br><i class="fas fa-phone-volume">  (04) 6674 2332 -    </i><i class="fas fa-phone-volume">  (04) 37868904</i><br><i class="fas fa-phone-volume">  (08) 6608 9686      </i><i class="fas fa-envelope"><a href="#">  Support@bizweb.vn</a></i></p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-under container">
+        <div class="footer-under__left">
+          <p>@CoppyRight 2018-2014 DKT Technology JSC</p>
+        </div>
+        <div class="footer-under__right"><img src="../assets/images/footer.png" alt=""></div>
+      </div>
+    </section>
+    <!-- Scripts-->
+    <script src="./assets/js/scripts.min.js"></script>
+  </body>
+</html>

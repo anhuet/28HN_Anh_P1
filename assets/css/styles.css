@@ -5,7 +5,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -146,6 +145,21 @@ a {
 
 i:hover {
   color: #e6ae48;
+}
+
+.titlename {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.price {
+  color: #e6ae48;
+  font-size: 16px;
+}
+
+.price span {
+  font-size: 10px;
+  vertical-align: top;
 }
 
 .header-dark {
@@ -349,6 +363,59 @@ i:hover {
 .footer-under__right {
   width: 33.333333%;
   padding-left: 15px;
+}
+
+.cart {
+  padding: 0 15px;
+  margin-bottom: 100px;
+}
+
+.cart .cart__table {
+  background-color: #fafafa;
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+}
+
+.cart .cart__table td, .cart .cart__table th {
+  font-size: 14px;
+  border: 1px solid #e6e6e6;
+  padding: 30px 0;
+}
+
+.cart .cart__table th {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.cart .cart__table--img {
+  width: 8.33333333333%;
+}
+
+.cart .cart__table--img img {
+  width: 100%;
+}
+
+.cart .cart__table--name {
+  width: 33.3333333%;
+}
+
+.cart .cart__table--price {
+  width: 16.66666667%;
+}
+
+.cart .cart__table--quantity {
+  width: 16.666667%;
+}
+
+.cart .cart__table--sum {
+  width: 8.333333333%;
+}
+
+.cart .cart__button {
+  float: right;
+  margin: 20px 0;
 }
 
 .productlist {

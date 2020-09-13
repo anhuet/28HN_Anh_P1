@@ -71,3 +71,19 @@ mixin productlistitem(img)
             a(href="#")
                 i.fas.fa-signal
                 | So sánh 
+mixin cart (list) 
+  table.cart__table
+    tr 
+      each title in ["ảnh", "tên sản phẩm", "giá", "số lượng", "tổng số", "xóa"]
+        th=title
+    each item in list
+      tr 
+        td.cart__table--img
+          img(src="../assets/images/" + item + ".jpg")
+        td.cart__table--name.titlename Rượu vang đỏ
+        td.cart__table--price.price 345,000
+            span đ 
+        td.cart__table-quantity 1
+        td.cart__table--sum.price 345,000
+            span đ
+        td.cart__table-delete: a: i.fas.fa-trash-alt

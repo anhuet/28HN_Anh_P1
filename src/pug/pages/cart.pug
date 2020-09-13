@@ -1,0 +1,22 @@
+extends ../base/base.pug
+include ../base/mixins.pug
+block layout
+
+    header
+        .header-white
+            include ../partials/header.pug
+    
+   
+    include menu-mega.pug
+    section#cart
+        .cart.container
+            +pagetag(["Trang chủ","Sản phẩm","Rượu vang đỏ"])
+            +headding("Giỏ hàng")
+            +cart([1,2,3,4])
+            .cart__button
+                button  TIẾP MUA HÀNG
+                button  XÓA
+                button CẬP NHẬT
+                 
+        
+    include ../partials/footer.pug
