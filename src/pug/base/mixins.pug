@@ -87,3 +87,14 @@ mixin cart (list)
         td.cart__table--sum.price 345,000
             span đ
         td.cart__table-delete: a: i.fas.fa-trash-alt
+mixin blogItem(item)
+  each id in item 
+    .blog-new__item
+      img(src="../assets/images/blog_"+id+".png", alt="")
+      h2 Vang thang Long classic
+      span Đăng bởi Giangle | 30/06/2015 | 60 bình luận
+      p.
+          Vang nổ Thang Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ
+          rượu nhẹ, bột ga đầy trắng mịn.
+          Van nổ Thăng Long ...
+      a(href="") Read more
