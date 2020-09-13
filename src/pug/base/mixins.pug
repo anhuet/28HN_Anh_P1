@@ -1,3 +1,15 @@
+mixin productListItem(img)
+  .productdetail-item
+    img.productdetail-item--img(src=img, alt="")
+    .productdetail-bot
+      i.fa.fa-heart 
+        span Yêu thích
+      i.fa.fa-chart-bar 
+        span So sánh
+    a(href="detail.html") Rượu vang Đà lạt
+    h3.productdetail-item--price 370.000
+      span.productdetail-item--saleprice 450.000
+    button.productdetail-item--bitton ADD TO CART
 mixin productItem(img,tag,span)
   .newproduct-item
     img.newproduct-item--img(src=img, alt="")
@@ -29,3 +41,17 @@ mixin titleItem
   h1.product-item__info--heading RƯỢU NHO NĂM 1987
   img.product-item__info--arrow(src="../assets/images/titleleft-dark.png", alt="")
   h3.product-item__info--price 330.000đ
+mixin  headding(title)
+  h1.product-item__info--heading= title
+  img.product-item__info--arrow(src="../assets/images/titleleft-dark.png", alt="")
+mixin productList(list)
+  - for (var i = 0; i < list.length; i++)
+      if list[i].quantity == " "
+        li 
+          a.product__item(href="#")=list[i].name 
+      else
+        li 
+          a(href="#")=list[i].name+" ("+list[i].quantity+")" 
+mixin productTag (list)
+    - for (var i = 0; i < list.length; i++)
+        a(href="#")=list[i]

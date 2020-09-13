@@ -1,0 +1,135 @@
+.slide
+    padding: 0 15px
+    margin-bottom: 100px
+    
+    .slide-img
+        height: 300px
+        img
+            width: 100%
+            height: 100%
+            background-size: cover
+.productdetail
+    display: flex
+    justify-content: center
+    margin-bottom: 100px
+    .productdetail__list
+        flex: 1
+        .productdetail__wrap-menu
+            height: 100%
+            padding: 0 15px
+            color: $color_text
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            .productdetail__wrap-menu--tag
+                a 
+                    display: block
+                    float: left
+                    padding: 5px
+                    border: 1px solid #818181
+                    margin: 0 10px 10px 0
+                    color: $color_text
+
+            h1 
+                font-size: 16px
+            img
+                margin-bottom: 30px
+            img:last-child
+                margin-bottom: 0
+            .product__ad
+                width: 100%
+            li 
+                list-style: none
+                margin-top: 10px
+                a
+                    color: $color_text
+                    font-size: 14px
+
+.productdetail__item
+    flex: 3
+    .productdetail__sidebar
+        padding: 0 15px
+        .productdetail__sidebar-wrapper
+            display: flex
+            justify-content: space-between
+            border: solid 1px $border_color
+            padding: 5px 0
+            .productdetail__sidebar--left
+                padding-left: 15px
+                .productdetail__sidebar--active
+                    color: $red_color
+                    margin: 5px
+                a
+                    color: $color_text
+                    &:hover
+                        color: $red_color
+            .productdetail__sidebar--right
+                a
+                    color: $color_text
+                    margin: 5px
+                .wrapper__products-headbar--active
+                    color: $red_color
+
+            
+    .productdetail__row
+        display: flex
+        justify-content: flex-start
+        .productdetail-item
+            width: 33.333%
+            padding: 0 15px
+            position: relative
+            margin-top: 30px
+            text-align: center
+            img
+                width: 100%
+            .productdetail-bot
+                
+                display: flex
+                justify-content: space-around
+                background-color: black
+                margin: 10px 0
+                visibility: hidden
+                img 
+                    width: 100%
+                i 
+                    color: white
+                    padding: 10px
+                    font-size: 18px
+            a
+                font-family: 'Times New Roman', Times, serif
+                font-size: 14px
+                color: black
+                text-transform: uppercase
+                display: inline-block
+                margin-bottom: 10px
+            h3 
+                color: $color_yelow
+                font-size: 21px
+                margin-bottom: 20px
+                font-family: "UTM Caviar"
+                position: relative
+                &::before
+                    font-size: 14px
+                    content: 'đ'
+                    position: absolute
+                    left:  56%
+                    top: -1px
+                span 
+                    margin-left: 15px
+                    font-size: 12px
+                    color: $color_text
+                    font-family: "UTML2"
+                    text-decoration: line-through
+                    position: relative
+                    &::before
+                        font-size: 12px
+                        content: 'đ'
+                        position: absolute
+                        left:  100%
+                        top: -1px
+            &--bitton
+                &:hover
+                    background-color: $color_yelow
+            &:hover
+                .productdetail-bot
+                    visibility: visible
