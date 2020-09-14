@@ -1,0 +1,39 @@
+extends ../base/base.pug
+include ../base/mixins.pug
+block layout
+    header
+        .header-white
+            include ../partials/header.pug
+    include menu-mega.pug
+    section#register
+        .login.container
+            .register-header
+                +pagetag(["Trang chủ","Blog"])
+                .register-header__menu
+                    .register-header__head
+                        +headding("Đăng Ký")
+                    button.register-header__res Đăng ký
+            form.register-form 
+                .register-form-wrapper
+                    .register-form__head
+                        h2 THÔNG TIN CÁ NHÂN
+                    .register-form__input
+                        +Input("Tên trước", "text", 1, "firstname")
+                        +Input("Tên sau", "text", 1, "lastname")
+                        +Input("Email", "email", 1, "email")
+                        +Input("Password", "password", 1, "password")
+
+                    .register-form__submit
+                        .register-form__check
+                            input.customCheckbox(type="checkbox" name="forgetPW" value="true")
+                            label(for="forgetPW") Đăng ký nhận tin
+                    .register-form__head
+                        h2 THÔNG TIN Đăng Nhập
+                    .register-form__input
+                        +Input("Mật khẩu", "password", 1, "password")
+                        +Input("Xác nhận mật khẩu", "password", 1, "password")
+                    .register-form__button
+                        button.btn GỬI
+                        button.btn QUAY LẠI
+            
+    include ../partials/footer.pug

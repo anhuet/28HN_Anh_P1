@@ -398,6 +398,86 @@ i:hover {
   padding-left: 15px;
 }
 
+.register-header {
+  padding: 0 15px;
+}
+
+.register-header .register-header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.register-header .register-header__menu .register-header__res {
+  padding: 0 50px;
+}
+
+.register-form {
+  margin: 50px 0px;
+  padding: 0 15px;
+}
+
+.register-form .register-form-wrapper {
+  border: 1px solid #e6e6e6;
+  padding: 50px;
+}
+
+.register-form .register-form-wrapper .register-form__head h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.register-form .register-form-wrapper .register-form__input {
+  margin-top: 30px;
+}
+
+.register-form .register-form-wrapper .register-form__input .textInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.register-form .register-form-wrapper .register-form__input .textInput label {
+  width: 10%;
+}
+
+.register-form .register-form-wrapper .register-form__input .textInput input {
+  border: 1px solid #e6e6e6;
+  width: 90%;
+  padding: 10px;
+  outline: none;
+}
+
+.register-form .register-form-wrapper .register-form__submit {
+  margin-left: 10%;
+  margin-top: -20px;
+}
+
+.register-form .register-form-wrapper .register-form__submit .register-form__check {
+  margin: 50px 0px;
+}
+
+.register-form .register-form-wrapper .register-form__submit label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.register-form .register-form-wrapper .register-form__button {
+  text-align: end;
+  margin-top: 20px;
+}
+
 .login-header {
   padding: 0 15px;
 }
@@ -448,7 +528,6 @@ i:hover {
 }
 
 .login-form .login-form-wrapper .login-form__input .textInput label {
-  color: #818181;
   width: 10%;
 }
 
@@ -461,7 +540,7 @@ i:hover {
 }
 
 .login-form .login-form-wrapper .login-form__submit .login-form__check {
-  margin-bottom: 20px;
+  margin: 50px 0px;
 }
 
 .blog {

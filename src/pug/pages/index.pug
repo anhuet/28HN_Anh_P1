@@ -75,32 +75,14 @@ block content
       +productHotItem("../assets/images/hotproduct_3.png")
       +productHotItem("../assets/images/hotproduct_4.png")
   // blog
-  section.blog
+  section.blog-prd
     .blog-wrap.container
       .blog-new
         .blog-new__header
           h1.blog-new__header--heading Tin tức và blog
           img.blog-new__header--arrow(src="../assets/images/title_dark.png", alt="")
         .blog-new__list
-          .blog-new__item
-            img(src="../assets/images/blog_1.png", alt="")
-            h2 Vang thang Long classic
-            span Đăng bởi Giangle | 30/06/2015 | 60 bình luận
-            p.
-                Vang nổ Thang Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ
-                rượu nhẹ, bột ga đầy trắng mịn.
-                Van nổ Thăng Long ...
-            a(href="") Read more
-          .blog-new__item
-            img(src="../assets/images/blog_2.png", alt="")
-            h2 Vang thang Long classic
-            span Đăng bởi Giangle | 30/06/2015 | 60 bình luận
-            p.
-                Vang nổ Thang Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ
-                rượu nhẹ, bột ga đầy trắng mịn.
-                Van nổ Thăng Long ...
-            a(href="") Read more
-
+          +blogItem([1,2])
       .blog-customer
         h1.blog-customer__heading Khách hàng
         img.blog-customer__arrow(src="../assets/images/title_dark.png", alt="")
