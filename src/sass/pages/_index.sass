@@ -2,7 +2,6 @@
     background-image: url(../images/banner.jpg)
     height: 667px
     position: relative
-    
     .banner__content
         .banner__content--big
             position: absolute
@@ -12,7 +11,7 @@
             top: 50%
             transform: translateY(-50%)
             padding: 0 15px
-            
+
         .banner__content--normal
             font-size: 97.59px
             font-family: "UVFDidot"
@@ -31,14 +30,14 @@
 .menu
     height: 160px
     background-color: black
-     padding: 0 15px
+    padding: 0 15px
     &-list
         @include flex
-        padding-top: 15px  
+        padding-top: 15px
         position: relative
         &__logo
             position: relative
-            padding-left:  15px
+            padding-left: 15px
             &--bg
                 position: absolute
                 top: 0
@@ -46,14 +45,14 @@
             &--text
                 text-align: center
                 margin-top: 32px
-                h2 
+                h2
                     font-size: 29px
                     font-family: "UTM"
                     color: rgb(230, 174, 72)
                     font-weight: 100
                     line-height: 1
-                    
-                h4  
+
+                h4
                     font-size: 16px
                     font-family: "roboto"
                     color: rgb(230, 174, 72)
@@ -77,7 +76,7 @@
         .menu__list
             @include flex
             padding-right: 15px
-            &-item 
+            &-item
                 font-family: 'Times New Roman', Times, serif
                 font-size: 13px
                 font-weight: 200
@@ -86,13 +85,13 @@
                 margin-left: 50px
 
                 &:last-child
-                        margin-right: 0
+                    margin-right: 0
             .menu__mega
                 &:hover
                     .menu__submenu
                         visibility: visible
                         opacity: 1
-                .menu__submenu 
+                .menu__submenu
                     position: absolute
                     display: flex
                     background-color: white
@@ -108,38 +107,38 @@
                     transition: opacity 1s, visibility 1s
                     &-list
                         flex: 1
-                        &-title 
+                        &-title
                             text-transform: uppercase
                             cursor: pointer
                             color: black
                         a
                             display: block
                             padding-top: 10px
-                            color: black   
+                            color: black
                             font-size: 14px
                     &-image
                         flex: 2
-                        background-size: cover 
-               
+                        background-size: cover
+
 //describe
 .describe
     position: relative
-    
+
     &__left
         @include position
         width: 532px
         height: auto
         z-index: -1
-        
+
     &__right
         position: absolute
         top: 0
         right: 0
         width: 180px
         height: auto
-        
+
     &__text
-        @include small-container 
+        @include small-container
         text-align: center
         margin: 0 auto
         z-index: 100
@@ -157,15 +156,15 @@
 .product
     height: 1012px
     .product-sale
-        padding: 100px 15px
-        position: relative
-        display: flex
-    
+    padding: 100px 15px
+    position: relative
+    display: flex
+
     .product-img
         width: 100%
-        
+
     .product-item
-        @include small-container 
+        @include small-container
         background-color: white
         height: 666px
         position: absolute
@@ -174,12 +173,12 @@
         transform: translate(-50%)
         display: flex
         padding-top: 95px
-        
-        &__img 
+
+        &__img
             margin-left: 10.4%
             margin-right: 30px
             width: 48.5714%
-    
+
             text-align: center
             position: relative
             &--box
@@ -188,7 +187,7 @@
                 left: 50%
                 transform: translate(-50%,-50%)
             &--span
-                span 
+                span
                     position: absolute
                     left: 20px
                     top: 20px
@@ -198,13 +197,12 @@
                     transform: rotate(-45deg)
                     tra
 
-                img 
+                img
                     @include position
-                    z-index: 1
                 
+
         &__info
             width: 27.724%
-
             &--des
                 font-size: 13px
                 margin: 40px 0 50px 0
@@ -219,13 +217,13 @@
                     border: 1px solid $color_yelow
                     text-align: center
                     padding: 18px 40px
-                    h4 
+                    h4
                         font-family: "UTML2"
                         font-size: 34px
                         color: $color_yelow
                         text-transform: uppercase
                     h5
-                        
+
                         font-family: "Times New Roman"
                         color: $color_yelow
                         font-size: 14px
@@ -252,21 +250,20 @@
                 background-color: black
                 margin: 10px 0
                 visibility: hidden
-                i 
+                i
                     color: white
                     padding: 10px
                     font-size: 18px
-                    
 
             &--span
                 position: absolute
-                top: 0 
+                top: 0
                 left: 15px
                 z-index: 1
             &--img
                 margin-top: 30px
                 height: 282px
-                
+
             &--tag
                 font-size: 20px
                 z-index: 2
@@ -282,7 +279,7 @@
                 text-transform: uppercase
                 display: inline-block
                 margin-bottom: 10px
-            h3 
+            h3
                 color: $color_yelow
                 font-size: 21px
                 margin-bottom: 20px
@@ -292,11 +289,10 @@
                     font-size: 14px
                     content: 'đ'
                     position: absolute
-                    left:  56%
+                    left: 56%
                     top: -1px
-                
 
-                span 
+                span
                     margin-left: 15px
                     font-size: 12px
                     color: $color_text
@@ -307,7 +303,7 @@
                         font-size: 12px
                         content: 'đ'
                         position: absolute
-                        left:  100%
+                        left: 100%
                         top: -1px
             &--bitton
                 &:hover
@@ -317,12 +313,12 @@
                     visibility: visible
 // gallery image
 .gallery
-    display: flex 
+    display: flex
     flex-wrap: wrap
     flex-direction: row
     width: 100%
     margin-top: 100px
-    &__img 
+    &__img
         width: 25%
         position: relative
         &:hover
@@ -335,31 +331,28 @@
                         &::after, &::before
                             height: 100%
 
-                        
-                        
-        
-        &--item 
+        &--item
             width: 100%
             height: 100%
-            
-            img 
+
+            img
                 width: 100%
                 height: 100%
-                
+
         &--des
             color: $color_white
             line-height: 1.5
             position: absolute
-            visibility: hidden  
+            visibility: hidden
             text-align: center
             @include transform
-            p 
+            p
                 font-size: 24px
             .gallery__img--hover
                 padding: 15px
                 h1
                     font-size: 72px
-                
+
                 &::after
                     content: ''
                     position: absolute
@@ -369,8 +362,7 @@
                     height: 1px
                     background-color: $color_white
                     transition: all .5s ease-in-out
-                    
-                
+
                 &::before
                     content: ''
                     position: absolute
@@ -385,13 +377,12 @@
                         content: ''
                         position: absolute
                         width: 1px
-                        left: 2%    
+                        left: 2%
                         top: 10%
                         height: 0%
                         background-color: $color_white
                         transition: all .5s ease-in-out
-                    
-                
+
                     &::before
                         content: ''
                         position: absolute
@@ -419,13 +410,13 @@
             margin-top: 30px
             &--span
                 position: absolute
-                top: 0 
+                top: 0
                 left: 15px
                 z-index: 1
             &--img
                 margin-top: 30px
                 height: 282px
-                
+
             &--tag
                 font-size: 20px
                 z-index: 2
@@ -442,7 +433,7 @@
                 display: block
                 margin-bottom: 10px
                 margin-top: 20px
-            h3 
+            h3
                 color: $color_yelow
                 font-size: 21px
                 margin-bottom: 20px
@@ -452,10 +443,10 @@
                     font-size: 14px
                     content: 'đ'
                     position: absolute
-                    left:  54%
+                    left: 54%
                     top: -1px
-                
-                span 
+
+                span
                     margin-left: 20px
                     color: $color_text
                     font-size: 12px
@@ -466,7 +457,7 @@
                         font-size: 12px
                         content: 'đ'
                         position: absolute
-                        left:  100%
+                        left: 100%
                         top: -1px
             &--bitton
                 &:hover
@@ -481,16 +472,18 @@
             &__header
                 text-align: center
                 margin-bottom: 40px
-            
+
                 &__heading
                     font-size: 21px
                     margin-bottom: 10px
                 &__arrow
                     margin-bottom: 10px
+            &__item
             .blog-new__list
                 display: flex
                 justify-content: flex-start
-                
+            
+
         .blog-customer
             width: 33.333333333333%
             text-align: center
@@ -518,35 +511,18 @@
                 font-size: 14px
                 line-height: 1.5
                 color: $color_text
-                margin-bottom: 5px
-            a 
+                margin-bottom: 15px
+            a
                 color: $color_text
+
             .blog-customer__info--avatar
-                h3 
+                h3
                     font-size: 14px
                     text-transform: uppercase
                     font-weight: 300
-                i 
+                i
                     color: $color_text
                     font-style: italic
-.fa.fa-circle 
+.fa.fa-circle
     font-size: 10px
     margin: 50px 10px
-
-
-
-                          
-                        
-
-    
-   
-
-
-                    
-            
-
-
-        
-
-        
-        

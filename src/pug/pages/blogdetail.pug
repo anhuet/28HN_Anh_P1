@@ -9,7 +9,56 @@ block layout
         .blogdetail.container
             .blogdetail-header
                 +pagetag(["Trang chủ","Blog"])
-                +headding("Giỏ hàng")
+                .login-header__menu
+                    .login-header__head
+                        +headding("Blog")
+            .blogdetail-content
+                .blogdetail-content--left
+                    .blogdetail-content__newpost
+                        h2 Bài viết mới nhất
+                        +newBlog("detailblog.png")
+                        +newBlog("detailblog_1.png")
+                        +newBlog("detailblog_2.png")
+                    .blogdetail-content__tag
+                        h2 Blog Tags
+                        .blogdetail-content__tag-wrapper
+                            +productTag(["Đồng hồ","Túi","Phụ Kiện","Giày","Nước hoa","Sandal","Áo sơ mi", "Trẻ em","Thời trang nữ"])
+                    .blogdetail-content__video
+                        h2 LAST video
+                        .blogdetail-content__video-img
+                            img(src="../assets/images/video.png", alt="")
+                            i.fas.fa-play
+                .blogdetail-content--right
+                    .blog-new__item
+                        img(src="../assets/images/blog_1.png", alt="")
+                        a(href="blogdetail.html")
+                        h2 Vang thang Long classic
+                        span Đăng bởi Giangle | 30/06/2015 | 60 bình luận
+                        p Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từhoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảmgiác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml.Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml...
+                    .blogdetail-content--form
+                        h2 Đóng góp ý kiến
+                        +Input("Tên","text",1,"name")
+                        +Input("Email","text","1","email")
+                        +Textarea("Ý kiến", 1,"content")
+                        button Gửi ý kiến
+                    .blogdetail-content--comment
+                        h2 BÌNH LUẬN (3)
+                        +Comment
+                        +Comment
+                        +Comment
+                    .blogdetail-content--page
+                        a(href="") <
+                        a(href="#") 1
+                        a(href="#") 2
+                        a(href="#") 3
+                        a(href="#") >
+                        
+
+                
+                    
+
+
+        
             
             
     include ../partials/footer.pug

@@ -188,6 +188,7 @@ i:hover {
   font-size: 14px;
   margin-bottom: 10px;
   line-height: 1.4;
+  color: #818181;
 }
 
 .blog-new__item a {
@@ -541,6 +542,283 @@ i:hover {
 
 .login-form .login-form-wrapper .login-form__submit .login-form__check {
   margin: 50px 0px;
+}
+
+#blogdetail {
+  margin-bottom: 100px;
+}
+
+.blogdetail-header {
+  padding: 0 15px;
+}
+
+.blogdetail-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+
+.blogdetail-content .blogdetail-content--left {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.blogdetail-content .blogdetail-content--left .blogdetail-content__newpost {
+  margin-bottom: 20px;
+}
+
+.blogdetail-content .blogdetail-content--left .blogdetail-content__newpost h2 {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.blogdetail-content .blogdetail-content--left .blogdetail-content__newpost .blogdetail-newpost__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.blogdetail-content .blogdetail-content--left .blogdetail-content__newpost .blogdetail-newpost__wrapper--img img {
+  display: 100%;
+}
+
+.blogdetail-content .blogdetail-content--left .blogdetail-content__newpost .blogdetail-newpost__wrapper--title {
+  margin-left: 10px;
+}
+
+.blogdetail-content .blogdetail-content--left .blogdetail-content__newpost .blogdetail-newpost__wrapper--title h2 {
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.blogdetail-content .blogdetail-content--left .blogdetail-content__newpost .blogdetail-newpost__wrapper--title i {
+  color: #818181;
+}
+
+.blogdetail-content .blogdetail-content--left .blogdetail-content__newpost .blogdetail-newpost__wrapper--title .fal.fa-calendar:before {
+  margin-right: 10px;
+}
+
+.blogdetail-content .blogdetail-content--left .blogdetail-content__tag {
+  margin-bottom: 40px;
+}
+
+.blogdetail-content .blogdetail-content--left .blogdetail-content__tag h2 {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.blogdetail-content .blogdetail-content--left .blogdetail-content__tag .blogdetail-content__tag-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.blogdetail-content .blogdetail-content--left .blogdetail-content__tag .blogdetail-content__tag-wrapper a {
+  padding: 5px;
+  border: 1px solid #818181;
+  margin: 0 10px 10px 0;
+  color: #818181;
+}
+
+.blogdetail-content .blogdetail-content--left .blogdetail-content__video h2 {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.blogdetail-content .blogdetail-content--left .blogdetail-content__video .blogdetail-content__video-img {
+  position: relative;
+}
+
+.blogdetail-content .blogdetail-content--left .blogdetail-content__video .blogdetail-content__video-img img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.blogdetail-content .blogdetail-content--left .blogdetail-content__video .blogdetail-content__video-img i {
+  color: white;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.blogdetail-content .blogdetail-content--right .blog-new__item p {
+  font-style: italic;
+}
+
+.blogdetail-content .blogdetail-content--right .blogdetail-content--form {
+  margin-top: 20px;
+  font-style: italic;
+  padding: 0 15px;
+}
+
+.blogdetail-content .blogdetail-content--right .blogdetail-content--form .textInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.blogdetail-content .blogdetail-content--right .blogdetail-content--form .textInput label {
+  width: 10%;
+}
+
+.blogdetail-content .blogdetail-content--right .blogdetail-content--form .textInput input {
+  border: 1px solid #e6e6e6;
+  width: 90%;
+  margin: 10px;
+  padding: 10px;
+  outline: none;
+}
+
+.blogdetail-content .blogdetail-content--right .blogdetail-content--form .textArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.blogdetail-content .blogdetail-content--right .blogdetail-content--form .textArea label {
+  width: 10%;
+}
+
+.blogdetail-content .blogdetail-content--right .blogdetail-content--form .textArea textarea {
+  border: 1px solid #e6e6e6;
+  width: 90%;
+  margin: 10px;
+  padding: 10px;
+  outline: none;
+}
+
+.blogdetail-content .blogdetail-content--right .blogdetail-content--form button {
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  background-color: #e6e6e6;
+  color: black;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+.blogdetail-content .blogdetail-content--right .blogdetail-content--comment {
+  padding: 0 15px;
+}
+
+.blogdetail-content .blogdetail-content--right .blogdetail-content--comment h2 {
+  font-size: 18px;
+  margin: 25px 0;
+}
+
+.blogdetail-content .blogdetail-content--right .blogdetail-content--comment .blogdetail-comment__wrapper .blogdetail-comment__wrapper--header {
+  padding: 10px;
+  background-color: #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14.5px;
+  color: #818181;
+  font-style: italic;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-decoration: underline;
+}
+
+.blogdetail-content .blogdetail-content--right .blogdetail-content--comment .blogdetail-comment__wrapper .blogdetail-comment__wrapper--header .blogdetail-comment__wrapper--author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blogdetail-content .blogdetail-content--right .blogdetail-content--comment .blogdetail-comment__wrapper .blogdetail-comment__wrapper--header .blogdetail-comment__wrapper--author div:first-child {
+  padding-right: 15px;
+  border-right: 1px solid  #818181;
+}
+
+.blogdetail-content .blogdetail-content--right .blogdetail-content--comment .blogdetail-comment__wrapper .blogdetail-comment__wrapper--header .blogdetail-comment__wrapper--author div:last-child {
+  margin-left: 15px;
+}
+
+.blogdetail-content .blogdetail-content--right .blogdetail-content--comment .blogdetail-comment__wrapper .blogdetail-comment__wrapper--comment {
+  color: #818181;
+  padding: 20px;
+}
+
+.blogdetail-content .blogdetail-content--right .blogdetail-content--page {
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.blogdetail-content .blogdetail-content--right .blogdetail-content--page a:first-child, .blogdetail-content .blogdetail-content--right .blogdetail-content--page :last-child {
+  background-color: black;
+  color: white;
+}
+
+.blogdetail-content .blogdetail-content--right .blogdetail-content--page a {
+  display: inline-block;
+  padding: 12px;
+  background-color: white;
+  color: black;
+  margin-left: 10px;
+  border: 1px solid black;
+}
+
+.blogdetail-content .blogdetail-content--right .blogdetail-content--page a:hover {
+  background-color: #737373;
+  color: white;
+}
+
+.blogdetail-content .blogdetail-content--right img {
+  width: 100%;
+}
+
+.blogdetail-content .blogdetail-content--right {
+  width: 75%;
+}
+
+.blogdetail-content .blogdetail-content--right img {
+  width: 100%;
 }
 
 .blog {
@@ -1336,7 +1614,7 @@ i:hover {
 .menu {
   height: 160px;
   background-color: black;
-  background-color-padding: 0 15px;
+  padding: 0 15px;
 }
 
 .menu-list {
@@ -1540,9 +1818,6 @@ i:hover {
 
 .product {
   height: 1012px;
-}
-
-.product .product-sale {
   padding: 100px 15px;
   position: relative;
   display: -webkit-box;
@@ -1604,7 +1879,6 @@ i:hover {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
 }
 
 .product .product-item__info {
@@ -2055,7 +2329,7 @@ i:hover {
   font-size: 14px;
   line-height: 1.5;
   color: #818181;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .blog-prd .blog-wrap .blog-customer a {

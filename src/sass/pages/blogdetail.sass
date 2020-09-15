@@ -1,1 +1,185 @@
-    
+#blogdetail 
+    margin-bottom: 100px
+.blogdetail-header 
+    padding: 0 15px
+.blogdetail-content
+    display: flex
+    margin-top: 40px
+    .blogdetail-content--left
+        width: 25%
+        padding: 0 15px
+        .blogdetail-content__newpost
+            margin-bottom: 20px
+            h2 
+                font-family: "Roboto"
+                font-size: 18px
+                font-weight: bold
+                text-transform: uppercase
+                margin-bottom: 20px
+            .blogdetail-newpost__wrapper
+                display: flex
+                justify-content: center
+                align-items: center
+                margin-bottom: 10px
+                &--img
+                    img
+                        display: 100%
+                        
+                &--title
+                    margin-left: 10px
+                    h2 
+                        
+                        font-size: 13px
+                        margin-bottom: 10px
+                        font-weight: bold
+                    i 
+                        color: $color_text
+                    .fal.fa-calendar:before
+                        margin-right: 10px
+        .blogdetail-content__tag
+            margin-bottom: 40px
+
+            h2 
+                font-family: "Roboto"
+                font-size: 18px
+                font-weight: bold
+                text-transform: uppercase
+                margin-bottom: 40px
+            .blogdetail-content__tag-wrapper
+                display: flex
+                flex-wrap: wrap
+                a 
+                    padding: 5px
+                    border: 1px solid #818181
+                    margin: 0 10px 10px 0
+                    color: $color_text
+        .blogdetail-content__video
+            h2 
+                font-family: "Roboto"
+                font-size: 18px
+                font-weight: bold
+                text-transform: uppercase
+                margin-bottom: 40px
+            .blogdetail-content__video-img
+                position: relative
+                img
+                    width: 100%
+                    height: 100%
+                    position: relative
+                i 
+                    color: white
+                    position: absolute
+                    background-color: rgba(0, 0, 0, 0.7)
+                    padding: 20px
+                    border-radius: 50%
+                    @include transform
+    .blogdetail-content--right
+        
+        .blog-new__item
+            p
+                font-style: italic
+        .blogdetail-content--form
+            margin-top: 20px
+            font-style: italic
+            padding: 0 15px
+            .textInput
+                display: flex
+                justify-content: center
+                align-items: center
+                label 
+                    width: 10%
+                input
+                    border: 1px solid #e6e6e6
+                    width: 90%
+                    margin: 10px
+                    padding: 10px
+                    outline: none
+            .textArea
+                display: flex
+                justify-content: center
+                align-items: flex-start
+                label 
+                    width: 10%
+                textarea
+                    border: 1px solid #e6e6e6
+                    width: 90%
+                    margin: 10px
+                    padding: 10px
+                    outline: none
+            button
+                font-family: 'Times New Roman', Times, serif
+                text-transform: uppercase
+                background-color: #e6e6e6
+                color: black
+                margin-left: 10%
+                margin-top: 20px
+        .blogdetail-content--comment
+            padding: 0 15px 
+            h2 
+                font-size: 18px
+                margin: 25px 0
+            .blogdetail-comment__wrapper
+                .blogdetail-comment__wrapper--header
+                    padding: 10px
+                    background-color: #e6e6e6
+                    display: flex
+                    font-size: 14.5px
+                    color: $color_text
+                    font-style: italic
+                    justify-content: space-between
+                    text-decoration: underline
+                    .blogdetail-comment__wrapper--author 
+                        display: flex
+                        div:first-child
+                           padding-right: 15px
+                           border-right: 1px solid  #818181
+                        div:last-child
+                            margin-left: 15px
+                .blogdetail-comment__wrapper--comment
+                    color: $color_text
+                    padding: 20px
+        .blogdetail-content--page
+            padding: 0 15px
+            display: flex
+            justify-content: flex-end
+            a:first-child,:last-child
+                 background-color: black
+                 color: white
+
+            a 
+                display: inline-block
+                padding: 12px
+                background-color: white
+                color: black
+                margin-left: 10px
+                border: 1px solid black
+                &:hover
+                    background-color: #737373
+                    color: white
+                    
+
+
+
+
+                
+               
+            
+
+                    
+
+
+                        
+            
+            
+
+
+
+
+
+        img 
+            width: 100%
+
+    .blogdetail-content--right
+        width: 75%
+        img 
+            width: 100%

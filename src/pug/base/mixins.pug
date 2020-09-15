@@ -99,7 +99,7 @@ mixin blogItem(item)
           rượu nhẹ, bột ga đầy trắng mịn.
           Van nổ Thăng Long ...
       a(href="") Read more
-mixin Input (title, texttype, require, name, value)
+mixin Input (title , texttype, require, name, value)
   .textInput
     label(for=name)=title 
         if (require == 1)
@@ -108,3 +108,31 @@ mixin Input (title, texttype, require, name, value)
         input(type=texttype name=name value=value)
     else
         input(type=texttype name=name)
+mixin Textarea (title, require, name)
+  .textArea
+    label(for=name)=title 
+        if (require == 1)
+            span * 
+    textarea(name=name, cols="30", rows="10")
+
+mixin newBlog(img)
+  .blogdetail-newpost__wrapper
+    .blogdetail-newpost__wrapper--img
+      img(src="../assets/images/"+img, alt="")
+    .blogdetail-newpost__wrapper--title
+      h2 Cách sắp xếp nội thất trong nhà
+      .blogdetail-newpost__wrapper--date
+        i.fal.fa-calendar  12/06/2015
+mixin Comment
+  .blogdetail-comment__wrapper
+    .blogdetail-comment__wrapper--header
+      .blogdetail-comment__wrapper--author 
+        div Bình luận bởi tác giả 
+        div Cách đây 4 giờ
+      .blogdetail-comment__wrapper--reply Trả lời
+    .blogdetail-comment__wrapper--comment
+      p Có lẽ bởi tính chất "ăn gian" vóc dáng và vô cùng thoải mái, gợi cảm mà cả 2 dạng trang phục này được áp dụng nhiều nhất trong street style tuần qua ,chọn cho mình bộ trang phục đơn sắc với thiết kế cổ yếm, ống rộng - vừa thoải mái tối đa lại không kém phần gợi cảm, kết hợp cùng đôi giày quai chữ T tôn dáng
+      
+
+
+
