@@ -1,0 +1,54 @@
+extends ../base/base.pug
+include ../base/mixins.pug
+block layout
+    header
+        .header-white
+            include ../partials/header.pug
+    include menu-mega.pug
+    section#order
+        .order.container
+            .order-header
+                +pagetag(["Trang chủ","Giỏ Hàng"])
+                .login-header__menu
+                    .login-header__head
+                        +headding("Giỏ hàng")
+            .order-content
+                .order-content__list
+                    .order-content__header
+                        h2 Danh sách đơn hàng
+                        .order-content__tag Trạng thái :
+                            each item in ["Tất cả (16)","Đã hủy (10)", "Chưa duyệt (0)","Đã duyệt (0)","Đã thanh toán- chờ mua hàng(0)","Đã mua hàng(0)","Hàng đã về-chờ giao(0)", "Đã kết thúc (6)"]
+                                a(href="")= item
+
+                    .order-content__table
+                        +order(6)
+                .order-content__info
+                    h2 Thông tin khách hàng
+                    .order-content__infodetail
+                        .order-content__infodetail--icon
+                            i.fas.fa-user
+
+                        .order-content__infodetail--name
+                            p Giang Le
+                            p Leanhgiang89@gmail.co
+                    .order-content__infodetail
+                        .order-content__infodetail--icon
+                            i.fas.fa-map-marker-alt
+
+                        .order-content__infodetail--name
+                            p Tòa nhà Hà Nội groupv
+                            p 442 Đội cấn, Ba Đình, Hà Nội
+                    .order-content__infodetail
+                        .order-content__infodetail--icon
+                            i.fas.fa-phone-alt
+
+                        .order-content__infodetail--name
+                            p (04) 3786 8904
+
+
+
+
+
+
+
+    include ../partials/footer.pug

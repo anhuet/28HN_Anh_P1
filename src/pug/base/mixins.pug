@@ -87,6 +87,24 @@ mixin cart (list)
         td.cart__table--sum.price 345,000
             span đ
         td.cart__table-delete: a: i.fas.fa-trash-alt
+mixin order(number)
+  table.order__table
+    tr
+      each title in ["STT","Mã đơn hàng/Ngày mua hàng","Địa chỉ","Số SP","Tổng tiền","Tình trạng","Thao tác"]
+        th= title
+    -for(var x = 0 ; x < number ; x++)
+      tr
+        td.order__table--stt= ("0"+x)
+        td.order__table--infodate 
+          p LÊGIANGANH89 - 17/06/2015
+          small 01:36 14/03/2015
+        td.order__table--warehouse Hà Đông
+        td.order__table--quantity 7
+        td.order__table--price 350.000đ
+        td.order__table--status Đã thanh toán
+        td.order__table--detail Chi tiết
+
+
 mixin blogItem(item)
   each id in item 
     .blog-new__item
