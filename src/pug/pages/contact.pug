@@ -1,0 +1,52 @@
+extends ../base/base.pug
+include ../base/mixins.pug
+block layout
+    header
+        .header-white
+            include ../partials/header.pug
+    include menu-mega.pug
+    section#contact
+        .contact.container
+            .contact-header
+                +pagetag(["Trang chủ","Liên hệ"])
+                .login-header__menu
+                    .login-header__head
+                        +headding("Liên hệ")
+            .contact-content
+                .contact-content--left
+                    iframe(src="https://www.google.com/maps/d/embed?mid=1hSJI5w-gsG-RFj5jcwFJKP_7aEU" width="640" height="480")
+                    .contact-content__form
+                        +Input("Your Name", "text", 0, "name")
+                        +Input("Your Email", "email", 0, "email")
+                        +Input("Your Subject", "text", 0, "subject")
+                        +Textarea("Your Message", 0, "message")
+
+                .contact-content--right
+                    .contact-content__logo
+                        .contact-content--text
+                            h2 Wine hourse
+                            h4 Since 1980
+                            img(src="../assets/images/logo.png", alt="")
+                        .contact-content--bg
+                            img(src="../assets/images/Vector Smart Object.png", alt="")
+                    .contact-content__info
+                        .contact-content__info-item
+                            .contact-content__info-item--icon
+                                i.fas.fa-map-marker-alt
+                            .contact-content__info-item--info
+                                p Tầng 4Tòa nhà Hà Nội Group, 442 Đội Cấn, Ba Đình, Hà Nội
+                        .contact-content__info-item
+                            .contact-content__info-item--icon
+                                i.fas.fa-phone-alt
+                            .contact-content__info-item--info
+                                p (04) 6644 0322
+                        .contact-content__info-item
+                            .contact-content__info-item--icon
+                                i.fas.fa-envelope
+                            .contact-content__info-item--info
+                                p Tầng 4 Tòa nhà Hà Nội Group, 442 Đội Cấn, Ba Đình, Hà Nội
+
+
+
+
+    include ../partials/footer.pug

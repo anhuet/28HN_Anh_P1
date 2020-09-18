@@ -56,45 +56,73 @@
         </div>
       </div>
     </section>
-    <section id="login">
-      <div class="login container">
-        <div class="login-header">
-          <div class="tag"><a class="tag__item" href="#">Trang chủ</a><span>/</span><a class="tag__item" href="#">Đăng nhập</a><span>/</span>
+    <section id="contact">
+      <div class="contact container">
+        <div class="contact-header">
+          <div class="tag"><a class="tag__item" href="#">Trang chủ</a><span>/</span><a class="tag__item" href="#">Liên hệ</a><span>/</span>
           </div>
           <div class="login-header__menu">
             <div class="login-header__head">
-              <h1 class="product-item__info--heading">Đăng nhập</h1><img class="product-item__info--arrow" src="../assets/images/titleleft-dark.png" alt=""/>
+              <h1 class="product-item__info--heading">Liên hệ</h1><img class="product-item__info--arrow" src="../assets/images/titleleft-dark.png" alt=""/>
             </div>
-            <button class="login-header__res">Đăng ký</button>
           </div>
         </div>
-        <form class="login-form"> 
-          <div class="login-form-wrapper">
-            <div class="login-form__head">
-              <h2>khách hàng đăng nhập </h2>
-              <p>Nếu bạn có một tài khoản, xin vui lòng đăng nhập </p>
-            </div>
-            <div class="login-form__input">
+        <div class="contact-content">
+          <div class="contact-content--left">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1hSJI5w-gsG-RFj5jcwFJKP_7aEU" width="640" height="480"></iframe>
+            <div class="contact-content__form">
               <div class="textInput">
-                <label for="email">Email<span>* </span>
+                <label for="name">Your Name
+                </label>
+                <input type="text" name="name"/>
+              </div>
+              <div class="textInput">
+                <label for="email">Your Email
                 </label>
                 <input type="email" name="email"/>
               </div>
               <div class="textInput">
-                <label for="password">Password<span>* </span>
+                <label for="subject">Your Subject
                 </label>
-                <input type="password" name="password"/>
+                <input type="text" name="subject"/>
               </div>
-            </div>
-            <div class="login-form__submit">
-              <div class="login-form__check">
-                <input class="customCheckbox" type="checkbox" name="forgetPW" value="true">
-                <label for="forgetPW">Quên mật khẩu</label>
+              <div class="textArea">
+                <label for="message">Your Message
+                </label>
+                <textarea name="message" cols="30" rows="10"></textarea>
               </div>
-              <button class="btn">ĐĂNG NHẬP</button>
             </div>
           </div>
-        </form>
+          <div class="contact-content--right">
+            <div class="contact-content__logo">
+              <div class="contact-content--text">
+                <h2>Wine hourse</h2>
+                <h4>Since 1980</h4><img src="../assets/images/logo.png" alt="">
+              </div>
+              <div class="contact-content--bg"><img src="../assets/images/Vector Smart Object.png" alt=""></div>
+            </div>
+            <div class="contact-content__info">
+              <div class="contact-content__info-item">
+                <div class="contact-content__info-item--icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="contact-content__info-item--info">
+                  <p>Tầng 4Tòa nhà Hà Nội Group, 442 Đội Cấn, Ba Đình, Hà Nội</p>
+                </div>
+              </div>
+              <div class="contact-content__info-item">
+                <div class="contact-content__info-item--icon"><i class="fas fa-phone-alt"></i></div>
+                <div class="contact-content__info-item--info">
+                  <p>(04) 6644 0322</p>
+                </div>
+              </div>
+              <div class="contact-content__info-item">
+                <div class="contact-content__info-item--icon"><i class="fas fa-envelope"></i></div>
+                <div class="contact-content__info-item--info">
+                  <p>Tầng 4 Tòa nhà Hà Nội Group, 442 Đội Cấn, Ba Đình, Hà Nội</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="brand"></section>

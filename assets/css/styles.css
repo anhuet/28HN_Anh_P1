@@ -399,6 +399,131 @@ i:hover {
   padding-left: 15px;
 }
 
+.contact-header {
+  padding: 0 15px;
+}
+
+.contact-content {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-content .contact-content--left {
+  width: 66.66666667%;
+  padding: 0 15px;
+}
+
+.contact-content .contact-content--left iframe {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 30px;
+}
+
+.contact-content .contact-content--left .textInput {
+  width: 100%;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contact-content .contact-content--left .textInput label {
+  width: 15%;
+  font-size: 15px;
+  color: #818181;
+}
+
+.contact-content .contact-content--left .textInput input {
+  width: 80%;
+  background-color: #f1f1f1;
+  border: #e6e6e6;
+  outline: none;
+}
+
+.contact-content .contact-content--left .textArea {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.contact-content .contact-content--left .textArea label {
+  width: 15%;
+  font-size: 14px;
+  color: #818181;
+}
+
+.contact-content .contact-content--left .textArea textarea {
+  width: 80%;
+  background-color: #f1f1f1;
+  border: #e6e6e6;
+  outline: none;
+}
+
+.contact-content .contact-content--right {
+  width: 33.33333333%;
+  padding: 0 15px;
+}
+
+.contact-content .contact-content--right .contact-content__logo {
+  position: relative;
+  width: 100%;
+  height: 140px;
+}
+
+.contact-content .contact-content--right .contact-content--text {
+  text-align: center;
+  position: absolute;
+  top: 35px;
+  left: 0;
+}
+
+.contact-content .contact-content--right .contact-content--text h2 {
+  font-size: 29px;
+  font-family: "UTM";
+  color: #e6ae48;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.contact-content .contact-content--right .contact-content--text h4 {
+  font-size: 16px;
+  font-family: "roboto";
+  color: #e6ae48;
+  line-height: 1.5;
+}
+
+.contact-content .contact-content--right .contact-content--bg {
+  margin-left: 15px;
+}
+
+.contact-content .contact-content__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0;
+  color: #818181;
+}
+
+.contact-content .contact-content__info-item i {
+  margin-right: 20px;
+}
+
 .register-header {
   padding: 0 15px;
 }
