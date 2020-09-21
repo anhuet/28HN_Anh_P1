@@ -1,0 +1,466 @@
+@media (max-width: $tablet)
+    .menu 
+        
+        &-list
+            .menu__list
+                .menu__list-wrapper
+                    display: none
+                .menu__nav-icon
+                    width: 200px
+                    text-align:  end
+                    display: block
+                    position: absolute
+                    top: 60px
+                    right: 0
+                    color: white
+                    i 
+                        font-size: 30px
+                #menu__nav-toggle:checked ~ div
+                    border: 
+                    display: flex
+                    flex-direction: column
+                    justify-content: flex-end
+                    align-items: flex-end
+                    position: absolute
+                    top: 20px
+                    right: 40px
+                    z-index: 10
+                    border: solid 1px $color_yelow
+                    
+                   
+                    a 
+                        margin: 0
+                        padding: 3px
+                        cursor: pointer
+                        font-size: 14px
+    .banner
+        .banner__content
+            .banner__content--big
+                font-size: 200px
+                left: 10%
+                .banner__content--normal
+                    font-size: 30px
+                    position: absolute
+                    top: 30%
+                    left: 50%
+                .banner__content--small 
+                    font-size: 10px
+                    
+    .detailproduct
+        .detail 
+            flex-direction: column
+            .detail-wrapper
+                width: 100%
+                justify-content: center
+                .detail__img 
+                    width: 100%
+                    img 
+                        margin-top: 50px
+
+                .detail__list
+                    a
+                        width: 100%
+            .detail__des
+                width: 100%
+                margin-top: 20px    
+    .describe
+        .describe__left
+            width: 30%
+        .describe__right
+            width: 10%
+        .describe__text
+            width: 50%
+            text-align: center
+            padding-top: 50px
+            .describe__text--heading
+                font-size: 16px
+                margin-bottom: 10px
+            .describe__text--line
+                margin-bottom: 10px
+                width: 40%
+            .describe__text--content
+                font-size: 12px
+                opacity: 0.8
+                margin-bottom: 10px
+    .product
+        .product-sale
+            .product-img
+                width: 100%
+                height: 100%
+            .product-item
+                width: 80%
+                padding-top: 40px
+
+                &__img
+                    margin-top: 10px
+                    padding: 0
+                    width: 40%
+                    .product-item__img--box
+                    .product-item__img--span
+                        span 
+                            font-size: 14px
+                        img 
+                            width: 60%
+                &__info
+                    width: 60%
+                    margin-right: 20px
+
+                    h1 
+                        font-size: 20px
+                    .product-item__info--price
+                        font-size: 20px
+
+                    .product-item__info--des
+                        font-size: 11px
+                    
+                    .product-table
+                        display: flex
+                        flex-wrap: wrap
+                        width: 100%
+                        &__item
+                            width: 50%
+                            border: 1px solid $color_yelow
+                            text-align: center
+                            padding: 18px 40px
+                            h4
+                                font-family: "UTML2"
+                                font-size: 34px
+                                color: $color_yelow
+                                text-transform: uppercase
+                            h5
+
+                                font-family: "Times New Roman"
+                                color: $color_yelow
+                                font-size: 14px
+                                text-transform: uppercase
+    .brand-logo
+        img
+            width: 100%
+    
+    .footer-under__right
+        img 
+            width: 100%
+                    
+        .productdetail__item
+            width: 100%
+    .order
+        .order-content
+            flex-direction: column
+            .order-content__list
+                width: 100%
+            
+            .order-content__info
+                width: 100%
+                .order-content__infodetail
+                    flex-direction: row 
+                    i 
+                        margin-right: 30px
+    .productdetail
+        flex-direction: column
+        .productdetail__list
+            width: 100% 
+            .productdetail__wrap-menu
+                li
+                    margin-right: 5px
+                    display: inline-block
+                    padding-right:  10px
+                    border-right: solid 1px $border_color
+                .productdetail__wrap-menu--compare,.productdetail__wrap-menu--tag
+                    margin-top: 20px
+                .productdetail__wrap-menu--tag
+                    margin-bottom: 10px
+                    a 
+                        display: inline-block
+                .productdetail__wrap-menu--img 
+                    img 
+                        display: none
+        .productdetail__item
+            margin-top: 20px
+            width: 100%
+
+    .header-nav
+        .header-nav__search
+            position: absolute
+            top: 10px
+            right: 15px
+        .header-nav__menu
+            width: 100%
+            height: auto
+            .header__nav-icon
+                width: 30px
+                display: block
+                position: absolute
+                top: 10px
+                left: 10px
+                color: white
+                i 
+                    font-size: 20px
+            #header__nav-toggle:checked ~ ul
+                max-height: 600px
+            .header-nav__menu-list
+                overflow: hidden
+                max-height: 0
+                display: block
+                margin-top: 20px
+                background-color: black
+                width: 50%
+                .header-nav__menu-item
+                    .header-nav__menu-link
+                        text-align: left
+                        width: 100%
+                        display: inline-block
+                        color: $color_yelow
+                        padding: 10px 0
+                        margin-left: 10px
+    .header-white
+        .header-nav
+            .header-nav__search
+                position: absolute
+                top: 10px
+                right: 15px
+                i
+                    color: black
+            .header-nav__menu
+                width: 100%
+                height: auto
+                .header__nav-icon
+                    left: 10px
+                    color: black
+
+
+@media only  screen and (max-width: $mobile)
+    .address-show .address-show__wrapper .address-show 
+        width: 100%
+    .address-info .address-info__wrapper
+        flex-direction: column
+        .address-info--left,.address-info--right    
+            width: 100%
+    .banner
+        height: 400px
+        .banner__content
+            .banner__content--big
+                font-size: 100px
+                .banner__content--small 
+                    font-size: 10px
+                    
+                .banner__content--normal
+                    font-size: 30px
+                    top: 20%
+                    left: 45%
+    .product
+        height: 800px
+        .product-sale
+            .product-item__img
+                width: 30%
+                img 
+                    width: 100%
+                    height: auto
+            .product-item__info
+                .product-item__info--heading
+                    font-size: 18px
+                .product-table
+                    width: 50%
+                    margin: 0 auto
+                    .product-table__item
+                        width: 100%
+                        padding: 0px
+                        margin: 0
+                        h4 
+                            font-size: 18px
+                        h5 
+                            font-size: 14px
+    .newproduct
+            
+        &__list
+            flex-direction: column
+            
+            .newproduct-item
+                width: 100%
+    .hotproduct
+            
+        &__list
+            flex-direction: column
+            .hotproduct-item
+                width: 100%
+    .gallery
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        width: 100%
+        margin-top: 100px
+        &__img
+            width: 100%
+            position: relative
+    .blog-prd
+        margin-top: 100px
+        .blog-wrap
+            display: flex
+            flex-direction: column
+            .blog-new
+                width: 100%
+                
+                &__item
+                .blog-new__list
+                    display: flex
+                    justify-content: flex-start
+            .blog-customer
+                width: 100%
+                margin-top: 40px
+    .footer-wrapper
+        flex-direction: column
+        .footer__item
+            text-align: center
+            width: 100%
+            margin-bottom: 40px
+        .footer__email
+            width: 100%
+            text-align: center
+            margin-bottom: 40px
+        .footer__local
+            width: 100%
+            text-align: center
+            margin-bottom: 40px
+    .footer-under
+        flex-direction: column
+        &__left,&__right
+            width: 100%
+            text-align: center
+            margin-bottom: 20px
+        &__right
+            img 
+                width: 100%
+    .order-content__table, 
+        overflow-x: auto
+    .cart
+        .cart__table
+             overflow-x: auto
+             width: 100%
+    .login-form
+        .login-form-wrapper
+            padding: 10px
+            .login-form__input
+                .textInput 
+                    input
+                        width: 60%
+                    label
+                        width: 20%
+    .register-form
+        .register-form-wrapper
+            padding: 10px
+            .register-form__input
+                .textInput 
+                    input
+                        width: 50%
+                    label
+                        width: 30%
+    .describe
+        .describe__content
+            flex-direction: column
+            .describe__content--img 
+                width: 100%
+            .describe__contnet--text
+                width: 100%
+                margin-top: 30px
+                text-align: left
+                p 
+                    width: 100%
+    .blog
+        .blog__list
+            flex-direction: column
+    .contact-content
+        flex-direction: column
+        .contact-content--left,.contact-content--right
+            width: 100%
+        .contact-content--right
+            margin-top: 30px
+            text-align: left
+    .productdetail 
+        .productdetail__item 
+            .productdetail__row 
+                flex-direction: column
+                .productdetail-item
+                    width: 100%
+                    img 
+                        width: 50%
+    .productlist 
+        .productlist__item
+            margin: 20px 0
+            .productlist__desc 
+                .productlist__desc-wrap 
+                    a 
+                        display: block
+                        margin: 10px 0
+    .info
+        flex-direction: column-reverse
+        .info__content,.info__img 
+            width: 100%
+        .info__img 
+            margin-bottom: 20px
+    .footer-wrapper 
+        .footer__email 
+            .footer__email-input 
+                ul 
+                    text-align: center
+                .footer__item-input__form 
+                    justify-content: center
+                    span 
+                        right: 18%
+    .menu 
+        height: 140px
+        &-list
+            .menu-list__logo
+                margin: 0
+                padding: 0
+                .menu-list__logo--text
+                    h2 
+                        font-size: 16px
+                    h4
+                        font-size: 12px
+                    img 
+                        width: 20%
+                .menu-list__logo--bg
+                    top: 6px
+                    left: 5px
+                    width: 80px
+
+                    img
+                        width: 100% 
+
+            .menu__list
+                #menu__nav-toggle:checked ~ div
+                    a 
+                        font-size: 10px
+@media only screen and(max-width: $small_mobile)
+    .banner
+        height: 300px
+        .banner__content
+            .banner__content--big
+                font-size: 50px
+                .banner__content--small 
+                    font-size: 10px
+                    
+                .banner__content--normal
+                    font-size: 15px
+                    top: 20%
+                    left: 45%
+    .menu
+        height: 140px
+    .contact-content .contact-content--left 
+        .textInput 
+            input
+                width: 70%
+            label
+                width: 20%
+                font-size: 10px
+        .textArea
+            textArea
+                width: 70%
+            label
+                width: 20%
+                font-size: 10px
+    
+    .login-header .login-header__menu .login-header__res,.register-header .register-header__menu .register-header__res
+        padding: 10px
+        
+
+        
